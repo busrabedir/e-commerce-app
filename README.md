@@ -7,10 +7,6 @@ Costy, kullanıcıların ürünleri görüntüleyip favori ürünlerini sepete e
 
 
 
-🔗 Live Demo:
-
-👉https://costy-homepage.netlify.app
-
 ## ✨ Özellikler
 
 - Dinamik ürün listeleme (`db.json` üzerinden)
