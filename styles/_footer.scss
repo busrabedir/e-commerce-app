@@ -1,0 +1,63 @@
+@use "./variables";
+
+footer {
+	background-color: variables.$main-color;
+	color: variables.$bg-color;
+	margin-top: 50px;
+	padding: 40px 10px;
+	.footer-c {
+		display: grid;
+		grid-template-columns: 3fr 1fr 1fr;
+		gap: 16px;
+		margin: 50px auto;
+
+		.footer-box {
+			display: flex;
+			flex-direction: column;
+
+			h2 {
+				font-size: 128px;
+				text-transform: uppercase;
+			}
+
+			.social {
+				display: flex;
+				align-items: center;
+				gap: 16px;
+
+				a {
+					background-color: variables.$bg-color;
+					padding: 10px;
+					font-size: 17px;
+					border-radius: 50%;
+					i {
+						color: variables.$main-color;
+					}
+				}
+			}
+
+			h3 {
+				font-size: 35px;
+			}
+
+			ul {
+				margin-top: 30px;
+				display: flex;
+				flex-direction: column;
+				gap: 15px;
+
+				li {
+					a {
+						color: variables.$bg-color;
+						font-size: 17px;
+					}
+				}
+			}
+		}
+	}
+
+	.copyright {
+		padding: 50px;
+		font-size: 20px;
+	}
+}

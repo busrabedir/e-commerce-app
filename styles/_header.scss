@@ -1,0 +1,69 @@
+@use "./variables";
+header {
+	background-color: variables.$header-color;
+	position: sticky;
+	height: 80px;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 100;
+
+	.container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 25px;
+
+		a {
+			color: variables.$main-color;
+		}
+		// Menu Icon
+		#menu-btn {
+			font-size: 28px;
+			color: variables.$main-color;
+			cursor: pointer;
+			display: none;
+		}
+
+		// Logo
+		.logo {
+			font-size: 24px;
+		}
+
+		// Nav
+		nav {
+			display: flex;
+			align-items: center;
+			gap: 16px;
+
+			a {
+				font-size: 20px;
+			}
+		}
+
+		// Basket Button
+
+		#basket-btn {
+			font-size: 25px;
+			cursor: pointer;
+			position: relative;
+		}
+
+		#basket-btn::after {
+			content: attr(data-quantity);
+			position: absolute;
+			top: 0;
+			right: -15px;
+			font-size: 13px;
+			background-color: variables.$main-color;
+			color: variables.$bg-color;
+			width: 20px;
+			height: 20px;
+			border-radius: 50%;
+			display: grid;
+			place-items: center;
+			font-style: normal;
+			font-weight: bold;
+		}
+	}
+}

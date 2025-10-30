@@ -1,0 +1,49 @@
+@use "./variables";
+.products {
+	padding: 10px;
+	h1 {
+		text-align: center;
+		margin: 30px 0;
+		font-size: 64px;
+	}
+
+	.product-container {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		gap: 16px;
+		.product {
+			img {
+				width: 100%;
+				height: 450px;
+				object-fit: cover;
+			}
+
+			&-info {
+				padding: 10px 15px;
+				h2 {
+					font-size: 25px;
+					color: variables.$text-color;
+					font-weight: 500;
+					margin: 15px 0;
+				}
+
+				p {
+					font-size: 20px;
+					color: variables.$main-color;
+					font-weight: 500;
+					margin: 20px 0;
+				}
+
+				button {
+					background-color: variables.$main-color;
+					color: variables.$bg-color;
+					padding: 10px;
+					width: 100%;
+					cursor: pointer;
+					font-size: 15px;
+					font-weight: 500;
+				}
+			}
+		}
+	}
+}
